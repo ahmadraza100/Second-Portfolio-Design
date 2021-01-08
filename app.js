@@ -11,8 +11,23 @@ document.getElementById("hemberg").addEventListener("click",function(){
 
     else
     {
-        document.querySelector(".menu").style.visibility = "hidden"
+        document.querySelector(".menu").style.visibility = "hidden";
     
     }
 
+   
 });
+
+                    
+const currentLocation = location.href;
+const menuItems = document.querySelectorAll("a");
+const menuLength = menuItems.length;
+
+for (let i = 0; i < menuLength ; i++){
+
+    if(menuItems[i].href ===currentLocation)
+    {
+        menuItems[i].className ="active";
+      
+    }
+}
