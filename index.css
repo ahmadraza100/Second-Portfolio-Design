@@ -1,200 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+
+
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-.navbar > h1{
-    font-size:3rem;
-    display:flex;
-    margin-left: 10px;
-    
-}
-
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    background: #D31027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #EA384D, #D31027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    color:rgb(0, 0, 0);
-    height: 80px;
-    align-items: center;
-    
-}
-
-ul{
-    display:flex;
-    margin-right:20px;
-
-}
-ul > li{ 
-
-    font-size: 1rem;
-    list-style: none;
-    padding:15px 50px;
-
-}
-
-ul > li > a{
-    font-size:2.5rem;
-    text-decoration:none;
-    height: 100%;
-    color:rgb(3, 3, 3);
-    cursor: pointer;
-}
-
-ul > li:hover {
-    background: #c21500;  
-background: -webkit-linear-gradient(to right, #ffc500, #c21500);  
- background: linear-gradient(to right, #ffc500, #c21500); 
- border-radius:10px;
-   
-}
-
-ul > li:hover a{
-    color:white;
-    text-decoration: overline;
-    text-decoration-color: white;
-    transition:all 0.8s ease;
-
-
-}
-
-
-.slider{
-   visibility: hidden;
 }
 
 #hero{
-    color:white;
-    font-size:4rem;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width:100%;
+}
+
+.navbar{
+   display:flex;
+  
+   align-items: center;
+
+   height:10vh;
+   width:100%;
+   border-bottom:1px solid white;
+
+
+    
+}
+
+.menu{
+    margin-left:30%;
+}
+.menu > ul{
+    
     display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin:40;
-    
+    list-style: none;
+    margin-right: 90px;
     
 }
 
-#hero >h1{
-    position: absolute;
-    top:400px;
-}
-
-#hero >p
-{
-    position: absolute;
-    top:550px;
-}
-
-#hero::before {
-    content: ""; 
-    position: absolute;
-    top: 0%;
-    left:0%;
-   background-repeat: no-repeat;
-   background-size: cover;
-    width: 100%;
+.menu > ul > li{
+    list-style: none;
     height: 100%;
-    background-image:url(/pix/background.jpg);
-    background-color: #333;
+    padding: 10px 60px;
     
-    z-index: -1;
 }
 
-@media only screen and ( max-width:970px){
-   
-
-    .slider{
-        visibility: visible;
-        font-size:1.5rem;
-        margin-right:.5em;
-    }
-
-    ul{
-
-            display: flex;
-            flex-direction: column;
-             height: 70%;
-            width: 100%;
-            position: absolute;
-            
-            top: 5.3em;
-            
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            margin: 0 auto;
-            text-align: center;
-            
-            z-index: +1;
-            opacity: 80%;
-            display:none;
-    }
-
-    ul > li:hover {
-        width: 100%;
-        padding:10px;
-        background: #c21500;  
-    background: -webkit-linear-gradient(to right, #ffc500, #c21500);  
-     background: linear-gradient(to right, #ffc500, #c21500); 
-     border-radius:10px;
-       
-    }
+.menu > ul > li > a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-size:2rem;
+    font-weight: bolder;
     
-    ul > li:hover a{
-        color:white;
-        text-decoration: overline;
-        text-decoration-color: white;
-        transition:all 0.8s ease;
-    
-    
-    }
 
-    #hero {
-        color: white;
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 40;
-    }
-    
-    #hero >h1 {
-        position: absolute;
-        top: 250px;
-    }
+}
 
-    #hero >p {
-        position: absolute;
-        top: 300px;
-    }
+i{
+    font-size:4rem;
+    margin-left:50px;
+    color:white;
 
-    .navbar > h1 {
-        font-size: 2rem;
-        display: flex;
-        margin-left: 10px;
-    }
+}
 
-    ul > li > a {
-        font-size: 1.5rem;
-        text-decoration: none;
-        height: 100%;
-        color: rgb(3, 3, 3);
-        cursor: pointer;
-    }
-
-
-    ul > li {
-        border-bottom: 2;
-        font-size: 1rem;
-        list-style: none;
-        padding: 20px;
-        border-bottom: 2px solid black;
-    }
-
-
+#hemberg{
+    display:none;
 }
