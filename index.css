@@ -18,13 +18,23 @@
 }
 
 
+
 #hero{
     background: #7F00FF;
     background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
     background: linear-gradient(to right, #E100FF, #7F00FF);
     height: 100vh;
     width:100%;
+    
     box-shadow:2px 2px 10px white;
+}
+
+.circle{
+    height:300px;
+    width:300px;
+    border-radius:300px;
+    color: white;
+  
 }
 
 .navbar{
@@ -78,7 +88,16 @@ i{
     font-size:4rem;
     margin-left:50px;
     color:white;
+    transform: rotate(0deg);
+    transition:1s ease;
 
+}
+
+i:hover{
+    transform: rotate(360deg);
+    transition:1s ease;
+    color:black;
+    text-shadow:10px 0px 10px white;
 }
 
 .menu > ul > li:hover {
@@ -106,15 +125,25 @@ i{
     font-family: 'Lato', sans-serif;
     font-size:6rem;
     animation-name: one;
-    animation-duration:5s;
-    animation-iteration-count: 3;
+    animation-duration:4s;
+    animation-iteration-count: 1;
+    transform:translateX(0px);
+    transition:1s ease;
+    
+
+}
+.info >  h1:hover{
+    transform:translateX(5%);
+    transition:1s ease;
+    color:rgb(230, 255, 2);
+    text-shadow: 0px  15px 20px white ;
     
 
 }
 
 
 .info >  p{
-
+    
     font-size:3rem;
     font-family: 'Nunito', sans-serif;
     text-transform:uppercase;
@@ -122,7 +151,10 @@ i{
     animation-duration:2s;
     animation-iteration-count: 10;
     animation-delay:15s;
+    
 }
+
+
 
 #about{
     width:100%;
@@ -137,8 +169,55 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
     color:white;
 }
 
+#about:hover .section{
+    display:none;
 
 
+}
+
+.abt{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'monserrat', sans-serif;
+    padding:40px;
+}
+
+#about:hover .abt>img{
+
+    transform:rotate(360deg);
+    transition: all .7s ease;
+    border:2px solid white;
+    box-shadow: 5px 5px 20px white , -5px -5px 20px white;
+    opacity: 1;
+}
+
+.abt > h1{
+
+    font-size:5rem;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+
+.abt > h2
+{
+    text-transform: uppercase;
+    padding:10px 200px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.abt>img{
+    transform:rotate(0deg);
+    transition:  .7s ease;
+    border-radius: 300px;
+    height: 300px ;
+    width:300px;
+    opacity:0;
+}
+    
 
 
 
