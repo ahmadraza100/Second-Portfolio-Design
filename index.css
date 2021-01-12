@@ -142,7 +142,7 @@ i:hover{
 }
 
 
-.info >  p{
+.info>p{
     
     font-size:3rem;
     font-family: 'Nunito', sans-serif;
@@ -167,63 +167,99 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
     align-items: center;
     justify-content: center;
     color:white;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
-#about:hover .section{
-    display:none;
-
-
+.abtheading{
+    font-size:5rem;
+    position:relative;
+    top:30vh;
+    transition: 1s ease;
 }
 
 .abt{
-    height:100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
     flex-direction: column;
-    font-family: 'monserrat', sans-serif;
-    padding:40px;
 }
 
-#about:hover .abt>img{
-
-    transform:rotate(360deg);
-    transition: all .7s ease;
-    border:2px solid white;
-    box-shadow: 5px 5px 20px white , -5px -5px 20px white;
-    opacity: 1;
-}
-
-.abt > h1{
-
-    font-size:5rem;
-    font-family: 'Nunito', sans-serif;
-    text-transform: uppercase;
-}
-
-.abt > h2
-{
-    text-transform: uppercase;
-    padding:10px 200px;
+.infoo{
     text-align: center;
-    font-family: 'Lato', sans-serif;
 }
-.abt>img{
-    transform:rotate(0deg);
-    transition:  .7s ease;
-    border-radius: 300px;
-    height: 300px ;
-    width:300px;
-    opacity:0;
+
+.infoo>p{
+    font-size:2rem;
+    font-family:'Courier New', Courier, monospace;
+    text-transform:none;
+    margin-top:50px;
+    padding:20px 400px;
+    font-weight: bold;
+    cursor:none;
+    color:white;
+    transform:translateX(-30vw);
+    opacity: 0;
+    transition:1s ease;
 }
+
+#about:hover  .infoo>p {
+    transform:translateX(0vw);
     
+    opacity: 100;
+    transition:.7s ease;
 
+}
+.infoo>img{
+    border-radius:190px;
+    border:2px solid yellow;
+    margin-top:40px;
+    box-shadow:5px 5px 10px white , -5px -5px 10px white;
+    transform: translateX(30vw);
+    opacity: 0;
+    transition:1s ease;
+}
+#about:hover  .infoo>img {
+    transform:translateX(0vw);
+    
+    opacity: 100;
+    transition:.7s ease;
 
+}
 
+.infoo>img:hover .infoo>img{
+    transform:rotate(360deg);
+    transition:1s ease;
+}
+#about:hover  .abtheading {
+    top:5vh;
+    transition: 1s ease;
+    text-decoration: underline;
+}
 
-
-
+.git{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:20px;
+}
+.git > a{
+    background:white;  
+    background: -webkit-linear-gradient(to right, rgb(255, 0, 0) , purple);  
+    background: linear-gradient(to right,rgb(202, 0, 0), purple); 
+    text-decoration: none;
+    font-size:3rem;
+    padding:15px 30px;
+    margin:30px 20px 0px 20px;
+    color:white;
+    border:2px solid black;
+    border-radius: 20px;
+    box-shadow:5px 5px 10px grey , -5px -5px 10px grey; 
+    transform: translateY(0px);
+    transition:.7s ease;
+}
+.git>a:hover{
+    transform: translateY(20px);
+    transition:.7s ease;
+}
 
 
 
@@ -349,6 +385,62 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
         margin: 9px 20px;
         padding: 15px 60px;
     }
+
+.infoo>p {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: none;
+    margin-top: 50px;
+    padding: 20px 30px;
+    font-weight: bold;
+    cursor: none;
+    color: white;
+    transform: translateX(-30vw);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.abtheading {
+    font-size: 2rem;
+    position: relative;
+    top: 30vh;
+    transition: 1s ease;
+}
+
+.infoo>img {
+    border-radius: 190px;
+    border: 2px solid yellow;
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px white, -2px -3px 5px white;
+    transform: translateX(30vw);
+    opacity: 0;
+    height: 150px;
+    width: 150px;
+    transition: 1s ease;
+}
+
+.git > a {
+    background: white;
+    background: -webkit-linear-gradient(to right, rgb(255, 0, 0) , purple);
+    background: linear-gradient(to right,rgb(202, 0, 0), purple);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 15px 10px;
+    margin: 30px 20px 0px 20px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px grey, -1px -1px 7px grey;
+    transform: translateY(0px);
+    transition: .7s ease;
+}
+
+.git {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
 
     
 }
