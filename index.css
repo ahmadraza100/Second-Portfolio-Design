@@ -314,7 +314,45 @@ i:hover{
     border:2px solid black;
 }
 
+.myprojects{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./pix/pic4.jpg);
+    background-attachment: sticky;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    color:white;
+}
 
+.myprojects > h1{
+
+    font-size:3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mainprojects{
+    display:flex;
+    flex-direction:row;
+
+}
+
+.proj{
+    background-color:red;
+    margin:10px 40px;
+    
+}
+
+.proj > .numbers{
+
+    background-color:white;
+    height:200px;
+
+}
 
 
 
@@ -597,3 +635,4 @@ i:hover{
         color:black;
     }
 }
+
