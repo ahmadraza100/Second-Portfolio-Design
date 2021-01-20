@@ -37,9 +37,9 @@ for (let i = 0; i < menuLength ; i++){
 
 
 
-var project1 = setInterval(counter1 , 140);
-var project2 = setInterval(counter2 , 140);
-var project3 = setInterval(counter3 , 140);
+var project1 = setInterval(counter1 , 80);
+var project2 = setInterval(counter2 , 80);
+var project3 = setInterval(counter3 , 80);
  var totalProject1  = 1; 
  var totalProject2  = 1; 
  var totalProject3 = 1; 
@@ -81,3 +81,6 @@ function counter3(){
 
 }
 
+document.querySelector("#projects").addEventListener("dblclick",function(){
+    location.reload();
+} );
