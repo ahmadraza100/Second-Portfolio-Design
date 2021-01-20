@@ -20,9 +20,11 @@
 
 
 #hero{
-    background: #7F00FF;
-    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
-    background: linear-gradient(to right, #E100FF, #7F00FF);
+   
+    background-image: url(./pix/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     width:100%;
     
@@ -321,7 +323,7 @@ i:hover{
     height:100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(./pix/background.jpg);
+    background-image: url(./pix/background2.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -332,10 +334,12 @@ i:hover{
 
 .myprojects > h1{
 
-    font-size:4rem;
+    font-size:7rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position:relative;
-    bottom:60px;
+    bottom:40px;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 20px black;
 }
 .mainprojects{
     display:flex;
@@ -352,25 +356,23 @@ i:hover{
     justify-content:center;
     flex-direction:column;
     padding:30px 10px;
+    font-family: 'Nunito', sans-serif; 
     width:25vw;
-    background: #ff6e7f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     position: relative;
     top:5vh;
     
     font-size:1.6rem;
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    box-shadow:5px 5px 20px rgb(163, 162, 162);
+    box-shadow:5px 5px 20px rgb(12, 11, 11);
     
 }
 
 .proj > .numbers{
 
-    background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     border-radius:30px;
     height:30vh;
@@ -380,7 +382,13 @@ background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/
     width:19vw;
     margin-top: 40px;
     box-shadow: 3px 3px 15px black;
-
+    font-size:4rem;
+    text-decoration: overline;
+    text-transform: uppercase;
+    
+    text-shadow:5px 5px 15px black;
+    color:yellow;
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 
@@ -595,6 +603,50 @@ background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/
     padding: 10px 0px;
     font-size: 1.6rem;
     text-transform: uppercase;
+}
+
+.myprojects > h1 {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    bottom: 10px;
+    text-shadow: 5px 5px 20px black;
+}
+
+.proj {
+    margin: 10px 2px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 19px 4px;
+    width: 31vw;
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);
+    background: linear-gradient(to left, #4A00E0, #8E2DE2);
+    position: relative;
+    top: 5vh;
+    font-size: .36rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    box-shadow: 1px 1px 6px rgb(199, 196, 196);
+}
+
+.proj > .numbers {
+    border-radius: 6px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24vw;
+    margin-top: 12px;
+    box-shadow: 3px 3px 15px black;
+    font-size: 1.5rem;
+    text-decoration: overline;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px black;
+    color: yellow;
+    text-decoration-color: black;
 }
     
 }
