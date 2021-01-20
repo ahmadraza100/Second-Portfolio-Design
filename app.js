@@ -31,3 +31,15 @@ for (let i = 0; i < menuLength ; i++){
       
     }
 }
+
+
+ var totalproject  = 1; 
+ 
+ document.addEventListener("click",project1);
+ var project1 = setInterval(counter1 , 15);
+
+  function counter1(){
+      totalProject++;
+      document.querySelector("#total").innerHTML = totalProject;
+      totalProject;
+  }

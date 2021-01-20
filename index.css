@@ -321,19 +321,21 @@ i:hover{
     height:100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(./pix/pic4.jpg);
-    background-attachment: sticky;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(./pix/background.jpg);
     background-size:cover;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+
     color:white;
 }
 
 .myprojects > h1{
 
-    font-size:3rem;
+    font-size:4rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position:relative;
+    bottom:60px;
 }
 .mainprojects{
     display:flex;
@@ -342,15 +344,42 @@ i:hover{
 }
 
 .proj{
-    background-color:red;
+    
     margin:10px 40px;
+    border-radius:25px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    padding:30px 10px;
+    width:25vw;
+    background: #ff6e7f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    position: relative;
+    top:5vh;
+    
+    font-size:1.6rem;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    box-shadow:5px 5px 20px rgb(163, 162, 162);
     
 }
 
 .proj > .numbers{
 
-    background-color:white;
-    height:200px;
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border-radius:30px;
+    height:30vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:19vw;
+    margin-top: 40px;
+    box-shadow: 3px 3px 15px black;
 
 }
 
